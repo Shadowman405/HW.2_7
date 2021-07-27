@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		BFA57BED26B06DAB006395B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA57BEC26B06DAB006395B9 /* AppDelegate.swift */; };
 		BFA57BEF26B06DAB006395B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA57BEE26B06DAB006395B9 /* SceneDelegate.swift */; };
-		BFA57BF126B06DAB006395B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA57BF026B06DAB006395B9 /* ViewController.swift */; };
 		BFA57BF426B06DAB006395B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA57BF226B06DAB006395B9 /* Main.storyboard */; };
 		BFA57BF626B06DAC006395B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFA57BF526B06DAC006395B9 /* Assets.xcassets */; };
 		BFA57BF926B06DAC006395B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA57BF726B06DAC006395B9 /* LaunchScreen.storyboard */; };
+		BFA57C0526B06EDA006395B9 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA57C0426B06EDA006395B9 /* Person.swift */; };
+		BFA57C0B26B07A2C006395B9 /* PersonsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA57C0A26B07A2C006395B9 /* PersonsListTableViewController.swift */; };
+		BFA57C0D26B07BBF006395B9 /* PersonInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA57C0C26B07BBF006395B9 /* PersonInfoViewController.swift */; };
+		BFA57C0F26B07E8E006395B9 /* PersonsNotebookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA57C0E26B07E8E006395B9 /* PersonsNotebookTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BFA57BE926B06DAB006395B9 /* HW.2_7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW.2_7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFA57BEC26B06DAB006395B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFA57BEE26B06DAB006395B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BFA57BF026B06DAB006395B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BFA57BF326B06DAB006395B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BFA57BF526B06DAC006395B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFA57BF826B06DAC006395B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFA57BFA26B06DAC006395B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFA57C0426B06EDA006395B9 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		BFA57C0A26B07A2C006395B9 /* PersonsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListTableViewController.swift; sourceTree = "<group>"; };
+		BFA57C0C26B07BBF006395B9 /* PersonInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoViewController.swift; sourceTree = "<group>"; };
+		BFA57C0E26B07E8E006395B9 /* PersonsNotebookTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsNotebookTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,34 @@
 		BFA57BEB26B06DAB006395B9 /* HW.2_7 */ = {
 			isa = PBXGroup;
 			children = (
+				BFA57C0326B06EB3006395B9 /* View */,
+				BFA57C0226B06EAB006395B9 /* Model */,
 				BFA57BEC26B06DAB006395B9 /* AppDelegate.swift */,
 				BFA57BEE26B06DAB006395B9 /* SceneDelegate.swift */,
-				BFA57BF026B06DAB006395B9 /* ViewController.swift */,
 				BFA57BF226B06DAB006395B9 /* Main.storyboard */,
 				BFA57BF526B06DAC006395B9 /* Assets.xcassets */,
 				BFA57BF726B06DAC006395B9 /* LaunchScreen.storyboard */,
 				BFA57BFA26B06DAC006395B9 /* Info.plist */,
 			);
 			path = HW.2_7;
+			sourceTree = "<group>";
+		};
+		BFA57C0226B06EAB006395B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BFA57C0426B06EDA006395B9 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BFA57C0326B06EB3006395B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BFA57C0A26B07A2C006395B9 /* PersonsListTableViewController.swift */,
+				BFA57C0C26B07BBF006395B9 /* PersonInfoViewController.swift */,
+				BFA57C0E26B07E8E006395B9 /* PersonsNotebookTableViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +162,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFA57BF126B06DAB006395B9 /* ViewController.swift in Sources */,
+				BFA57C0D26B07BBF006395B9 /* PersonInfoViewController.swift in Sources */,
+				BFA57C0F26B07E8E006395B9 /* PersonsNotebookTableViewController.swift in Sources */,
+				BFA57C0B26B07A2C006395B9 /* PersonsListTableViewController.swift in Sources */,
 				BFA57BED26B06DAB006395B9 /* AppDelegate.swift in Sources */,
+				BFA57C0526B06EDA006395B9 /* Person.swift in Sources */,
 				BFA57BEF26B06DAB006395B9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
