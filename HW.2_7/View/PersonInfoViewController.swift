@@ -21,5 +21,4 @@ class PersonInfoViewController: UIViewController {
         personEmailLbl.text = person.email
         personPhoneLbl.text = person.phoneNumber
     }
-
 }
